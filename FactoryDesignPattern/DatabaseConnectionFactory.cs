@@ -7,7 +7,7 @@ namespace FactoryDesignPattern
 {
     public static class DatabaseConnectionFactory
     {
-        public static IDatabaseConnection CreateDatabaseConnection()
+        public static IDatabaseConnection Create()
         {
             string[] foundValuesInConfig = ConfigurationManager.AppSettings.GetValues("DatabaseType");
             if (foundValuesInConfig != null && foundValuesInConfig.Length >= 1)

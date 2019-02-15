@@ -8,7 +8,7 @@ namespace FactoryDesignPattern
         static void Main(string[] args)
         {
             Console.WriteLine("Initiating database connection...");
-            var dbConnection = DatabaseConnectionFactory.CreateDatabaseConnection();
+            var dbConnection = DatabaseConnectionFactory.Create();
             dbConnection.Connect();
             Console.WriteLine("Doing some cool stuff with database.");
             int i = 0;
